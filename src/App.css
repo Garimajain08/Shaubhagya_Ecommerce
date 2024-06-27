@@ -1,0 +1,22 @@
+
+.hamberger ul{
+    flex-direction: column;
+    line-height: 2px;
+}
+.hamberger .hamberger-icon{
+    display: inline;
+
+}
+.hamberger .closebutton{
+    display:inline;
+}
+img{
+    height:50px;
+    width:20px;
+}
+.box{
+    z-index:-100;
+}
+.img{
+    z-index:8000;
+}
