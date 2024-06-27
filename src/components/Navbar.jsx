@@ -42,8 +42,8 @@ export default function Navbar() {
     <>
 
     <div className={`flex shadow-md justify-between   sm:p-5 p-6  mb-7 ${isClose?"h-screen items-center text-3xl flex-col ":""} `} >
-    {/* <img src={viteLogo} alt=""  className=''/> */}
-    <p className={`font-extrabold text-xl md:p-2 ${isClose ? 'mt-7  text-3xl' : ''}`}>SM..</p>
+   
+    <p className={`font-bold text-xl md:p-2 ${isClose ? 'mt-7  text-3xl' : ''}`}>SM..</p>
     <ul className={` gap-7 flex ${isMenuOpen?' flex-col sm:flex-row':"hidden"} ${!showHamberger?"justify-end items-center w-full ":""}`}>
 
         <li ><NavLink  className={({ isActive }) => (isActive ? 'text-bold underline' : '')} to="/">Home</NavLink></li>
