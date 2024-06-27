@@ -8,6 +8,7 @@ import Products from './components/products';
 import Contact from './components/contact';
 import Cart from './components/cart';
 import Home from './components/Home';
+import Error from './components/error';
 import './App.css';
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {path:'cart',
         element:<Cart/>,
 
+      },
+      {
+        path: '*',
+        element: <Error />,
       },
     ],
   },
