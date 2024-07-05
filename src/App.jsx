@@ -9,6 +9,7 @@ import Contact from './components/contact';
 import Cart from './components/cart';
 import Home from './components/Home';
 import Error from './components/error';
+import Singleproduct from './components/Singleproduct';
 import './App.css';
 const router = createBrowserRouter([
   {
@@ -31,10 +32,15 @@ const router = createBrowserRouter([
         path: 'contact',
         element: <Contact />,
       },
+      {
+        path:'singleproduct/:id',
+        element:<Singleproduct/>
+      },
       {path:'cart',
         element:<Cart/>,
 
       },
+     
       {
         path: '*',
         element: <Error />,
