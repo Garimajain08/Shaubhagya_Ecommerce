@@ -6,8 +6,8 @@ import { IoLogoDesignernews } from "react-icons/io5";
 import { IoBarChartSharp } from "react-icons/io5";
 export default function Trusted() {
   return (
-    <div style={{ backgroundColor: 'rgba(81, 56, 238, 0.2)' }} className='mt-12 max-w-full'>
-    <div  className='  max-w-[1200px] mx-auto flex justify-center flex-col'>
+    <div style={{ backgroundColor: 'rgba(81, 56, 238, 0.2)' }} className='mt-12 max-w-full min-w-[500px]'>
+    <div  className='  max-w-[1200px] mx-auto flex justify-center flex-col min-w-[500px]'>
       
       <h3 className='text-center p-3 text-xl md:text-2xl font-medium'> Trusted By 1000+ Companies</h3>
          <div className='flex flex-row justify-between p-1 md:p-12'>

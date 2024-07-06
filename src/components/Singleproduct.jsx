@@ -42,18 +42,18 @@ export default function SingleProduct() {
   }
  
   return (
-    <div className='max-w-[1200px] mx-auto  flex   gap-5 justify-around p-7 '>
+    <div className='max-w-[1200px] mx-auto  flex flex-col md:flex-row  gap-5 justify-around p-7 '>
     {data && (
       <>
-        <div className='flex flex-col  gap-1 justify-between'>
+        <div className='flex md:flex-col  gap-1 justify-between'>
           {data.image.map((image, index) => (
             <img onClick={()=>setstartimage(image)} style={{ height: '80px', width: '500px' }} key={index} src={image.url} alt={`Image ${index}`} />
           ))}
         </div>
         <div className='flex items-center '>
-          <img src={startimg.url}  style={{ height: '200px', width: '800px' }} alt="" />
+          <img src={startimg.url}  className=' min-w-[500px] h-[300px] md:h-[200px] md:min-w-[0px] w-[700px]'  alt="" />
         </div>
-        <div className= ' flex flex-col mt-7'>
+        <div className= ' min-w-[480px] max-w-full mt-7 p-2 '>
           <h2 className=' text-3xl text-left '>{data.name}</h2>
           <p><Stars rating={data.stars}/></p>
           <p>{data.reviews} Reviews</p>
@@ -75,6 +75,12 @@ export default function SingleProduct() {
             <p>Replace within 20 Days</p>
             </div>
           
+          </div>
+          <div className='leading-loose'>
+          <p>Available <span className='font-bold'>{data.stock?"in stock":"out of stock"} </span></p>
+         
+          <p>ID - <span className='font-bold'>{data.id}</span></p>
+          <p>Brand -<span className='font-bold'>{data.company}</span></p>
           </div>
         </div>
       </>

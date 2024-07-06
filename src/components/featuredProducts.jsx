@@ -8,7 +8,7 @@ export default function FeaturedProducts() {
     <div>.......Loading .....</div>
    }
   return (
-    <div style={{ backgroundColor: 'rgba(81, 56, 238, 0.1)' }}>
+    <div className='min-w-[500px]' style={{ backgroundColor: 'rgba(81, 56, 238, 0.1)' }}>
       <div  className=' p-2 max-w-[1200px] mx-auto py-7'>
         <p className="text-center md:text-left">CHECK NOW</p>
       <h2 className='text-2xl font-bold text-center md:text-left'>Our Featured Services</h2>

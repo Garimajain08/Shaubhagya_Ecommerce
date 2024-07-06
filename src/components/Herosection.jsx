@@ -7,7 +7,7 @@ export default function Herosection({head}) {
    
     
 <div className='flex'>
-   <div  className=' flex  flex-col md:flex-row max-w-[1200px] mx-auto   sm:p-4'> 
+   <div  className=' flex  flex-col md:flex-row max-w-[1200px] mx-auto   sm:p-4 min-w-[500px]'> 
 
 
 <div className="content flex flex-col justify-center  md:w-1/2 p-5 sm:p-7">
