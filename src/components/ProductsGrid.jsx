@@ -5,7 +5,7 @@ import GridComponent from './GridComponent';
 
 
 export default function ProductsGrid() {
-    const {state}=useContext(FilterContext)
+    const {state,filteredProducts}=useContext(FilterContext)
     const {products,loading,error}=state;
     if (loading) {
         return <div>Loading...</div>;
@@ -16,7 +16,7 @@ export default function ProductsGrid() {
     }
     return (
     <div className='flex flex-col gap-2 '>
-     { products.map((e)=>(
+     { filteredProducts.map((e)=>(
 
        <GridComponent name={e.name}  img = {e.image} desc={e.description} price={e.price} id={e.id}/>
 
