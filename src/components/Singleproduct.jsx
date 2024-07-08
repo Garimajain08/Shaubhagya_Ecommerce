@@ -120,7 +120,7 @@ export default function SingleProduct() {
             <AddtoCart  total={total} stock={data.stock} settotal={settotal}/>
            :"" }
            <br />
-           <button type="button"  style={{ backgroundColor: 'rgba(81, 56, 238, 1)' }}  onClick={() => setcart(true)}className="text-white p-3  hover:bg-purple-800">Add to Cart</button>
+           <button type="button"  style={{ backgroundColor: 'rgba(81, 56, 238, 1)' }}  onClick={() => setcart(true)}className="text-white p-3  hover:bg-red-800">Add to Cart</button>
           </div>
         </>
       )}

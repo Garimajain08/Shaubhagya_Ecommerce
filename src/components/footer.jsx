@@ -8,7 +8,7 @@ export default function Footer() {
   return (
    
    
-    <div className=' min-w-[550px] mt-24 mb-0 h-72 md:p-2 text-white flex flex-col items-center justify-center' style={{"background-color":"#282c34"}}>
+    <div className='w-full   min-w-[1200px] mt-24 mb-0 h-72 md:p-2 text-white flex flex-col items-center justify-center mx-auto' style={{"background-color":"#282c34"}}>
 
     <div className='  gap-3 flex flex-col md:flex-row  items-center  md:gap-44 lg:gap-72 md:items-center md:justify-center '>
 

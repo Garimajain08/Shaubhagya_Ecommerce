@@ -41,7 +41,7 @@ export default function Navbar() {
   return (
     <>
 
-    <div className={`flex shadow-md justify-between  min-w-[500px]  sm:p-5 p-6  mb-7 ${isClose?"h-screen items-center text-3xl flex-col ":""} `} >
+    <div className={`flex shadow-md justify-between   sm:p-5 p-6  mb-7 ${isClose?"h-screen items-center text-3xl flex-col ":""} `} >
    
     <p className={`font-bold text-xl md:p-2 ${isClose ? 'mt-7  text-3xl' : ''}`}>SM..</p>
     <ul className={` gap-7 flex ${isMenuOpen?' flex-col sm:flex-row':"hidden"} ${!showHamberger?"justify-end items-center w-full ":""}`}>

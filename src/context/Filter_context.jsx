@@ -4,7 +4,9 @@ import React, { createContext, useReducer, useEffect,useState } from 'react';
 const initialState = {
   products: [],
   loading: false,
-  error: false
+  error: false,
+  filtered_products:[],
+  criteria:"",
 };
 
 // Reducer function
@@ -15,7 +17,10 @@ function reducer(state, action) {
     case 'ERROR':
       return { ...state, error: true, loading: false };
     case 'SET_DATA':
-      return { ...state, products: action.payload, loading: false, error: false };
+      return { ...state, products: action.payload, 
+        loading: false,
+        error: false,
+        filtered_products:action.payload };
     default:
       return state;
   }
@@ -34,7 +39,7 @@ export const FilterProvider = ({ children }) => {
       try {
         const response = await fetch("https://api.pujakaitem.com/api/products");
         const data = await response.json();
-        console.log(data)
+    
         dispatch({ type: 'SET_DATA', payload: data });
       } catch (error) {
         dispatch({ type: 'ERROR' });
